@@ -12,8 +12,11 @@ body {
 /* Main Section */
 
 main .main-div a img{
-    width: 300px;
-    height: 95px;
+    /* width: 300px;
+    height: 95px; */
+    width: 181px;
+    height: 74px;
+    margin-left: 2rem;
 }
 .main-div{
     position: relative;
@@ -21,7 +24,8 @@ main .main-div a img{
     align-items: center;
     justify-content: space-between;
     padding-right: 1rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    padding-top: 1.5rem;
 }
 
 .connect a{
@@ -134,7 +138,7 @@ main .main-div a img{
 
 /* Marquee */
 
-.images{
+/* .images{
     margin-top: 1.5rem;
 }
 
@@ -147,7 +151,7 @@ main .main-div a img{
     display: flex;
     gap: 0.6rem;
     font-family: cursive;
-}
+} */
 
 /* Social Links */
 
@@ -161,14 +165,47 @@ main .main-div a img{
     justify-content: center;
 }
 
-.links .links-section .twitter-logo{
+.links .links-section .logo{
     font-size: 3rem;
 }
-.links .links-section .twitter-logo a i{
+.links .links-section .logo a i{
     color: black;
 }
 
-.links .links-section .twitter-logo a i img{
+.links .links-section .logo a i img{
     width: 2.7rem;
     height: 2.7rem;
-}   
+}
+
+
+
+
+/* Marquee */
+
+.images{
+    margin-top: 1.5rem;
+}
+
+.images .images-section img{
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.images .images-section{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.images .images-section .image{
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
