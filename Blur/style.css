@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFC100;
+}
+
+/* Main Section */
+
+main .main-div a img{
+    width: 300px;
+    height: 95px;
+}
+.main-div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.connect a{
+    color: black;
+    text-decoration: none;
+}
+
+.coming span{
+    font-size: 20px;
+    color: #fff;
+    font-family: cursive;
+}
+
+/* Hero Section */
+
+.hero{
+    margin-top: 4rem;
+}
+.hero .hero-section{
+    text-align: center;
+}
+.hero .hero-section img{
+    height: 400px;
+    width: 400px;
+}
+.hero .hero-section h1{
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 900;
+    margin-top: 2rem;
+    color: #c55a1b;
+}
+.hero .hero-section .hero-para{
+    font-family: cursive;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    margin-top: 2rem;
+    line-height: 1.3rem;
+}
+
+/* Connect Wallet */
+
+.btn-flip{
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+  }
+
+  .btn-flip:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: #fff;
+    width: 89%;
+    transition: 0.5s;
+    position: absolute;
+    background: #000;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+    padding-top: 0.50rem;
+    padding-bottom: 0.40rem;
+    padding-left: 0.75rem;
+    padding-right: 0.62rem;
+    border: 1px solid red;
+    border-radius: 2rem;
+    font-size: 22px;
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+  }
+  
+  .btn-flip:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    background: #000;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    font-size: 22px;
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+    padding-top: 0.55rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border: 1px solid red;
+    border-radius: 2rem;
+    
+  }
+
+  .btn-flip:hover:after{
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover:before{
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+/* Marquee */
+
+.images{
+    margin-top: 1.5rem;
+}
+
+.images .images-section img{
+    width: 50px;
+    height: 50px;
+}
+
+.images .images-section .border{
+    display: flex;
+    gap: 0.6rem;
+    font-family: cursive;
+}
+
+/* Social Links */
+
+.links{
+    margin-top: 2rem;
+}
+
+.links .links-section{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.links .links-section .twitter-logo{
+    font-size: 3rem;
+}
+.links .links-section .twitter-logo a i{
+    color: black;
+}
+
+.links .links-section .twitter-logo a i img{
+    width: 2.7rem;
+    height: 2.7rem;
+}   
